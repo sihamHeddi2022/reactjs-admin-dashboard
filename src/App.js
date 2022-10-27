@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Icon from '@material-ui/core/Icon';
+// import Icon from '@material-ui/core/Icon';
 import "./styles/index.css"; 
 
 
@@ -10,10 +10,10 @@ import Home from './pages/Home';
 function App() {
   return (    
       <div className="App">
-            hi there 
+{/*             hi there 
             
              <Icon>home</Icon>
-  
+   */}
 
             <Router>
               <Switch>

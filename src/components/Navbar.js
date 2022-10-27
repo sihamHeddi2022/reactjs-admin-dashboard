@@ -5,7 +5,8 @@ import React from 'react';
 function NavBar() {
     return ( 
         <div>
-            hello navbar
+            {/* search */}
+            {/* options */}
         </div>
      );
 }
