@@ -1,6 +1,7 @@
 /* p
     background-color: black */
-
+body
+    overflow-x: hidden
 
 .content 
     display: grid
@@ -18,7 +19,7 @@
 .header
     @include flexo(.5rem)
     padding-left: 1rem
-    border-bottom: 1px solid #ebe8e8	
+    // border-bottom: 1px solid #ebe8e8	
    
     .logo
         @include flexo(.5rem)
@@ -49,3 +50,56 @@
             border-radius: .4rem
             background-color: #dacee0c7
             padding: 0 .6rem
+
+
+.navbar
+  
+    border-bottom: 1px solid #ebe8e8
+    padding-bottom: .5rem
+    margin-bottom: 0 !important
+    @include flexo(.3rem)
+    .options
+        @include flexo(.4rem)
+        	
+
+        .banner
+            color: white
+            background-color: #c71230c7
+            width: fit-content
+            padding: .1rem .3rem
+            border-radius: 5rem
+            font-size: .8rem
+            position: absolute
+            top: 2rem
+            right:11rem
+        .info
+            @include flexo(1rem)
+            .content
+                margin-right: 1rem
+                small
+                    color: grey
+                h4
+                    margin: 0 !important
+                    padding: 0 !important
+                @include flexo(.02rem)
+                flex-direction: column
+                align-items: flex-start
+    justify-content: space-between
+    .search
+        margin: .4rem 2rem
+        width: 27%
+        // @include flexo(.3rem)
+
+.MuiFilledInput-input
+    padding: .6rem !important
+    // border: none !important
+
+ 
+
+
+
+
+
+
+
+
