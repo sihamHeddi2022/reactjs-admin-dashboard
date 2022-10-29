@@ -1,11 +1,40 @@
-
+@import "index"
 .main-section
-    width: 100%
+    .info
+        color: green
+    .infob
+        background-color: grey
+    width: 96%
     height: 100%
     // position: relative
     // top:-1.1rem
-    padding: 2rem 4rem
-    background-color: #f5f1f7
+    padding: 1rem 7rem 1rem 2rem
+    background-color: #f5f3f7
+    .cards
+        
+        margin: 3rem 0
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        gap: .7rem
+        
+        .details
+            @include flexo(.5rem)
+            justify-content: space-between
+            margin-bottom: 1rem
+        // .percentage
+        //      @include flexo(.1rem)
+
+        h2
+            margin-bottom: .4rem
     .heading
         display: flex
         align-items: center
+        justify-content: space-between
+        .title
+            h2
+                margin-bottom: .8rem
+            small
+                color: grey
+                font-size: .8rem
+        .actions
+            @include flexo(.8rem)
