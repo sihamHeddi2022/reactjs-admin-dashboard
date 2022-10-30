@@ -168,14 +168,35 @@ body {
   padding: 1rem 7rem 1rem 2rem;
   background-color: #f5f3f7;
 }
+.main-section .graphs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0.5rem 1fr 0.5rem 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+.main-section .graphs small {
+  color: grey;
+}
+.main-section .graphs .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.main-section .graphs .header .title h2 {
+  margin-bottom: 0.5rem;
+}
 .main-section .info {
   color: green;
 }
-.main-section .infob {
-  background-color: grey;
-}
 .main-section .cards {
-  margin: 3rem 0;
+  margin: 1rem 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 0.7rem 1fr 0.7rem 1fr 0.7rem 1fr;

@@ -1,9 +1,21 @@
 @import "index"
 .main-section
+    .graphs
+        small
+            color: grey
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        gap: .5rem
+        .header
+            display: flex
+            justify-content: space-between
+            align-items: flex-start
+            .title
+                h2
+                    margin-bottom: .5rem
     .info
         color: green
-    .infob
-        background-color: grey
+
     width: 96%
     height: 100%
     // position: relative
@@ -12,7 +24,7 @@
     background-color: #f5f3f7
     .cards
         
-        margin: 3rem 0
+        margin: 1rem 0
         display: grid
         grid-template-columns: 1fr 1fr 1fr 1fr
         gap: .7rem
