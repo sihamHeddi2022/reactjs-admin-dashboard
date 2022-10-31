@@ -8,28 +8,10 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import "../styles/home.css"; 
 import LinearProgress from '@material-ui/core/LinearProgress';
+import {PieChartt}  from '../components/charts/PieChart';
 
 function Home() {
-    const options = {
-        theme: "light",
-        animationEnabled: true,
-        exportFileName: "New Year Resolutions",
-        exportEnabled: true,
-        data: [{
-            type: "pie",
-            showInLegend: true,
-            legendText: "{label}",
-            toolTipContent: "{label}: <strong>{y}%</strong>",
-            indexLabel: "{y}%",
-            indexLabelPlacement: "inside",
-            dataPoints: [
-                { y: 45, label: "send" },
-                { y: 45, label: "open" },
-                { y: 10, label: "spam" },
-           
-            ]
-        }]
-    }
+
     const StyledLinearProgress3 = withStyles({
         colorPrimary: {
           backgroundColor: "#D0D0D0"
@@ -208,7 +190,8 @@ function Home() {
                                     </Icon>
                                 </IconButton>
                             </div>
-              
+                           
+                           <PieChartt/>
 
                         
                         </CardContent>
