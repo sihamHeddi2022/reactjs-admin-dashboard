@@ -9,6 +9,8 @@ import CardContent from '@material-ui/core/CardContent';
 import "../styles/home.css"; 
 import LinearProgress from '@material-ui/core/LinearProgress';
 import {PieChartt}  from '../components/charts/PieChart';
+import BarChartt from '../components/charts/BarChart';
+import AreaChartt from '../components/charts/AreaChart';
 
 function Home() {
 
@@ -197,39 +199,47 @@ function Home() {
                         </CardContent>
                     </Card>
                     <Card >
-                        <CardContent className='header'>
-
-                            <div className="title">
-                                 <h2>Income Amounts</h2>
-                               
-                            </div>
-                            <IconButton>
-                                <Icon>
-                                    more_vert
-                                </Icon>
-                            </IconButton>
+                        <CardContent >
+                           <div className='header'>
+                                <div className="title">
+                                        <h2>Income Amounts</h2>
+                                    
+                                </div>
+                                <IconButton>
+                                        <Icon>
+                                            more_vert
+                                        </Icon>
+                                </IconButton>
                             
-
+                           </div>
+                          
+                          <BarChartt/>
+                           
                         
                         </CardContent>
                     </Card>
                     <Card >
-                        <CardContent className='header'>
+                        <CardContent>
+                         
 
-                            <div className="title">
-                                 <h3>Revenue</h3>
-                                 <h2>5690.90 $</h2>
-                                 <small>
-                                      With 20 deals
-                                 </small>
-                            </div>
-                            <IconButton>
-                                <Icon>
-                                    more_vert
-                                </Icon>
-                            </IconButton>
+                           <div className="header">
+                                <div className="title">
+                                        <h3>Revenue</h3>
+                                        <h2>5690.90 $</h2>
+                                        <small>
+                                            With 20 deals
+                                        </small>
+                                    </div>
+                                    <IconButton>
+                                        <Icon>
+                                            more_vert
+                                        </Icon>
+                                    </IconButton>
                             
 
+                           </div>
+                         
+                         <AreaChartt/>
                         
                         </CardContent>
                     </Card>

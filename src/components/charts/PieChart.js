@@ -20,7 +20,7 @@ const data = [
     );
   };
 export const PieChartt = ()=>{return(
-    <PieChart width={400} height={200}>    
+    <PieChart width={400} height={250}>    
        <Pie
             data={data}
             cx="40%"
@@ -36,7 +36,8 @@ export const PieChartt = ()=>{return(
               <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
             ))}
         </Pie>
-        <Legend verticalAlign="bottom" height={36} align="center" width={300}/>
+        
+        <Legend verticalAlign="bottom" height={36} align="center" valign="bottom" width={300}/>
 
   </PieChart>
 )};
