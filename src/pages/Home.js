@@ -11,6 +11,8 @@ import LinearProgress from '@material-ui/core/LinearProgress';
 import {PieChartt}  from '../components/charts/PieChart';
 import BarChartt from '../components/charts/BarChart';
 import AreaChartt from '../components/charts/AreaChart';
+import TableDeals from '../components/others/TableDeals';
+import ListOfTasks from '../components/others/ListOfTasks';
 
 function Home() {
 
@@ -246,6 +248,25 @@ function Home() {
                 </div>
 
 
+                <div className="other-details">
+                    {/* table */}
+                    <Card >
+                        <CardContent>
+                            <h2>Top Performance</h2>
+                            <small>Last 2 weeks</small>
+                            <TableDeals/>
+
+                        </CardContent>
+                    </Card>
+                           {/* tasks */}
+                    <Card >
+                        <CardContent>
+                            <h2>Tasks</h2>
+                            <small>4 of 8 remainig</small>
+                            <ListOfTasks/>
+                        </CardContent>
+                    </Card>
+                </div>
 
 
 

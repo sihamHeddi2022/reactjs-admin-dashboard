@@ -1,5 +1,27 @@
 @import "index"
 .main-section
+    .tasks
+        ul
+            padding: 0
+            margin-top: 2rem
+            li
+                list-style: none
+    .progress
+        @include flexo($gap: .4rem)
+
+    .info-cell
+
+        text-align: left
+        @include flexo($gap: .5rem)
+        align-items: center
+        h5
+            margin: .1rem 0
+        
+    .other-details 
+        margin-top: 1.5rem
+        display: grid
+        grid-template-columns: 2fr 1fr
+        gap: .5rem
     .graphs
         small
             color: grey

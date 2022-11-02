@@ -37,7 +37,7 @@ export const PieChartt = ()=>{return(
             ))}
         </Pie>
         
-        <Legend verticalAlign="bottom" height={36} align="center" valign="bottom" width={300}/>
+        <Legend  height={36} align="center" valign="bottom" width={300}/>
 
   </PieChart>
 )};
