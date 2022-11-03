@@ -13,6 +13,7 @@ import BarChartt from '../components/charts/BarChart';
 import AreaChartt from '../components/charts/AreaChart';
 import TableDeals from '../components/others/TableDeals';
 import ListOfTasks from '../components/others/ListOfTasks';
+import "../styles/responsive.css"
 
 function Home() {
 

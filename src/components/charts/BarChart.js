@@ -1,5 +1,6 @@
 import React from "react";
-import { Bar, BarChart, Legend } from "recharts";
+import { Bar, BarChart, Legend, ResponsiveContainer } from "recharts";
+import "../../styles/charts.css"
 
 
 const data = [
@@ -33,19 +34,21 @@ function BarChartt() {
     console.log("hi there I'm the bar chart");
     
     return (
-
-    <BarChart width={300} height={280} data={data} >
+      <div className="pie">
+      <ResponsiveContainer width="100%" height="100%">
+    <BarChart data={data} >
         {/* <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="name" />
         <YAxis />
         <Tooltip /> */}
-         <Legend  align="center" valign="top" height={36}  /> 
+         <Legend  align="center" valign="center"  /> 
         <Bar dataKey="target" fill="#8884d8" maxBarSize={10}/>
         <Bar dataKey="last month" fill="violet" maxBarSize={10}/>
         <Bar dataKey="last work" fill="purple" maxBarSize={10}/>
         {/* <Bar dataKey="uv" fill="#82ca9d" /> */}
       </BarChart>
-
+     </ResponsiveContainer>
+     </div>
 
 
         

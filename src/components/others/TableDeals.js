@@ -7,10 +7,10 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import { Avatar, Box, CircularProgress, Typography } from '@material-ui/core';
-
+import "../../styles/responsive.css"
 const useStyles = makeStyles({
   table: {
-    minWidth: 650,
+    minWidth:"fit-content",
   },
 });
 
@@ -47,8 +47,12 @@ export default function TableDeals() {
               </TableCell>
               <TableCell align="left">
                 <div className="info-cell">
+                    <div className="avatar">
+                       
+                      <Avatar alt="Remy Sharp" src="https://remysharp.com/images/remy-2017.jpg" />
 
-                    <Avatar alt="Remy Sharp" src="https://remysharp.com/images/remy-2017.jpg" />
+
+                    </div>
                     <div className="">
                         <h5>Ramy Sharp</h5>
                         <small>$8,500.00</small>
@@ -58,7 +62,7 @@ export default function TableDeals() {
               </TableCell>
              <TableCell align="right">187</TableCell>
               <TableCell align="right">154</TableCell>
-              <TableCell align="right">28 Tasks done</TableCell> 
+              <TableCell align="right">28 <span className='tasks'>Tasks </span> done</TableCell> 
               
               <TableCell align="right" className='progress'>
                  <p>75 %</p>
@@ -73,8 +77,12 @@ export default function TableDeals() {
               </TableCell>
               <TableCell align="left">
                 <div className="info-cell">
-
-                    <Avatar alt="Remy Sharp" src="https://remysharp.com/images/remy-2017.jpg" />
+                <div className="avatar">
+                       
+                <Avatar alt="Remy Sharp" src="https://remysharp.com/images/remy-2017.jpg" />
+ 
+ 
+                     </div>
                     <div className="">
                         <h5>Ramy Sharp</h5>
                         <small>$8,500.00</small>
@@ -84,7 +92,7 @@ export default function TableDeals() {
               </TableCell>
              <TableCell align="right">187</TableCell>
               <TableCell align="right">154</TableCell>
-              <TableCell align="right">28 Tasks done</TableCell> 
+              <TableCell align="right">28 <span className='tasks'>Tasks </span> done</TableCell> 
               
               <TableCell align="right" className='progress'>
                  <p>100%</p>
@@ -99,8 +107,12 @@ export default function TableDeals() {
               </TableCell>
               <TableCell align="left">
                 <div className="info-cell">
-
-                    <Avatar alt="Remy Sharp" src="https://lisarichards.co.uk/wp-content/uploads/elementor/thumbs/Lara-McDonnell-Headshot-2-scaled-pud2vvqc6s9kbcmh6msnculkjyqqkph3ce1csbv4v4.jpeg" />
+                <div className="avatar">
+                       
+                <Avatar alt="Remy Sharp" src="https://lisarichards.co.uk/wp-content/uploads/elementor/thumbs/Lara-McDonnell-Headshot-2-scaled-pud2vvqc6s9kbcmh6msnculkjyqqkph3ce1csbv4v4.jpeg" />
+        
+        
+                </div>
                     <div className="">
                         <h5>Ramy Sharp</h5>
                         <small>$8,500.00</small>
@@ -110,7 +122,7 @@ export default function TableDeals() {
               </TableCell>
              <TableCell align="right">187</TableCell>
               <TableCell align="right">154</TableCell>
-              <TableCell align="right">28 Tasks done</TableCell> 
+              <TableCell align="right">28 <span className='tasks'>Tasks</span> done</TableCell> 
               
               <TableCell align="right" className='progress'>
                  <p>25 %</p>
@@ -125,8 +137,12 @@ export default function TableDeals() {
               </TableCell>
               <TableCell align="left">
                 <div className="info-cell">
-
-                    <Avatar alt="Remy Sharp" src="https://img.freepik.com/free-photo/indoor-shot-beautiful-happy-african-american-woman-smiling-cheerfully-keeping-her-arms-folded-relaxing-indoors-after-morning-lectures-university_273609-1270.jpg" />
+                <div className="avatar">
+                       
+                <Avatar alt="Remy Sharp" src="https://img.freepik.com/free-photo/indoor-shot-beautiful-happy-african-american-woman-smiling-cheerfully-keeping-her-arms-folded-relaxing-indoors-after-morning-lectures-university_273609-1270.jpg" />
+               
+               
+                       </div>
                     <div className="">
                         <h5>Ramy Sharp</h5>
                         <small>$8,500.00</small>
@@ -136,7 +152,7 @@ export default function TableDeals() {
               </TableCell>
              <TableCell align="right">187</TableCell>
               <TableCell align="right">154</TableCell>
-              <TableCell align="right">28 Tasks done</TableCell> 
+              <TableCell align="right">28 <span className='tasks'>Tasks </span>done</TableCell> 
               
               <TableCell align="right" className='progress'>
                  <p>45 %</p>

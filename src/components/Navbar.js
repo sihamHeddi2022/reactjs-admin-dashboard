@@ -10,6 +10,13 @@ function NavBar() {
                 {/* search */}
             
                 <div className="search">
+                    <div className="menuBtn">
+                        <IconButton>
+                            <Icon>
+                                menu
+                            </Icon>
+                        </IconButton>
+                    </div>
                       {/* <Icon>
                             search                 
                       </Icon> */}

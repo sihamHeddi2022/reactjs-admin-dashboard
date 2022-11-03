@@ -154,8 +154,18 @@ body {
   padding: 0 !important;
 }
 .navbar .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
   margin: 0.4rem 2rem;
   width: 27%;
+}
+.navbar .search .menuBtn {
+  display: none;
 }
 
 .MuiFilledInput-input {

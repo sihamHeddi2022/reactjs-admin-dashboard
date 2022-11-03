@@ -2,8 +2,10 @@ import React from "react";
 import {
   AreaChart,
   Area,
+  ResponsiveContainer,
 
 } from "recharts";
+import "../../styles/charts.css"
 
 const data = [
   {
@@ -52,9 +54,11 @@ const data = [
 
 export default function AreaChartt() {
   return (
+    <div className="pie area">
+    <ResponsiveContainer width="100%" height="100%">
     <AreaChart
-      width={300}
-      height={200}
+     
+ 
       data={data}
       margin={{
         top: 10,
@@ -65,5 +69,7 @@ export default function AreaChartt() {
     >
       <Area type="monotone" dataKey="uv" stroke="#8884d8" fill="#ebccff" />
     </AreaChart>
+    </ResponsiveContainer>
+    </div>
   );
 }

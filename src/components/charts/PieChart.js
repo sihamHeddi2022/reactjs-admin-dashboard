@@ -1,5 +1,6 @@
 import React from "react";
-import { PieChart,Pie,Cell ,Legend} from 'recharts';
+import "../../styles/charts.css"
+import { PieChart,Pie,Cell ,Legend, ResponsiveContainer} from 'recharts';
 const data = [
     { name: 'Group A', value: 400 },
     { name: 'Group B', value: 300 },
@@ -20,10 +21,12 @@ const data = [
     );
   };
 export const PieChartt = ()=>{return(
-    <PieChart width={400} height={250}>    
+  <div className="pie">
+  <ResponsiveContainer width="100%" height="100%">
+    <PieChart >    
        <Pie
             data={data}
-            cx="40%"
+            cx="50%"
             cy="50%"
             labelLine={false}
             label={renderCustomizedLabel}
@@ -37,7 +40,9 @@ export const PieChartt = ()=>{return(
             ))}
         </Pie>
         
-        <Legend  height={36} align="center" valign="bottom" width={300}/>
+        <Legend   align="center" valign="bottom"/>
 
   </PieChart>
+  </ResponsiveContainer>
+  </div>
 )};

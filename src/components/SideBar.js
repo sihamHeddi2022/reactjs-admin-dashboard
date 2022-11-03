@@ -8,9 +8,9 @@ function SideBar() {
         <div className='sidebar'>
             <div className="header">
                     {/* menu icon  */}
-                    <Icon>
+                    {/* <Icon>
                        menu
-                    </Icon>
+                    </Icon> */}
                 <div className="logo">
           
                     {/*   icon logo */}
