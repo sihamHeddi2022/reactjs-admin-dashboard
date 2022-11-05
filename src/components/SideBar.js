@@ -1,11 +1,12 @@
 
 
-import React from 'react';
-import { Icon } from '@material-ui/core';
+import React, { useContext } from 'react';
+import { Icon} from '@material-ui/core';
+import { context } from './Navbar';
 
 function SideBar() {
     return ( 
-        <div className='sidebar'>
+        <div className='sidebar' >
             <div className="header">
                     {/* menu icon  */}
                     {/* <Icon>
